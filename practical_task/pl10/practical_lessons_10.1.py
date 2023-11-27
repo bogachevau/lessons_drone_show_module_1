@@ -14,9 +14,10 @@
 #     print(line[-2])
 
 
-# with open('file.txt', encoding='utf-8') as file:
-#     lines = file.readlines()
-#     print(*lines[7:])
+with open('file.txt', encoding='utf-8') as file:
+    lines = file.readlines()
+lines = ''.join(lines[7:])
+print(lines)
 
 
 # Вам доступен текстовый файл lines.txt из нескольких строк. Напишите программу, которая выводит на экран
@@ -77,7 +78,9 @@
 # Вам доступен текстовый файл data.txt, в котором записаны строки текста. Напишите программу,
 # выводящую все строки данного файла в обратном порядке: сначала последнюю, затем предпоследнюю и т.д.
 
-with open('data.txt', 'r', encoding='utf-8') as file:
-    line_list = [item.rstrip() for item in file]
-    line_list.reverse()
-    print(*line_list, sep='\n')
+# with open('data.txt', 'r', encoding='utf-8') as file:
+#     line_list = [item.rstrip() for item in file]
+#     line_list.reverse()
+#     print(*line_list, sep='\n')
+
+
